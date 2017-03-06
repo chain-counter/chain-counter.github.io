@@ -2,23 +2,13 @@
 <head>
     <title>Chain counter</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/counter.js"></script>
 </head>
 
 <body>
-    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-        var clicks = 0;
-    function downClick() {
-        clicks -= 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
+    <script type="text/javascript"></script>
     <button type="button" onClick="onClick()">+1</button>
     <button type="button" onClick="downClick()">-1</button>
-    <p>Clicks: <a id="clicks">0</a></p>
+    <p>Chain: <a id="clicks">0</a></p>
 
 </body></html>
