@@ -1,5 +1,5 @@
 # Chain Counter - count your chains for Pokemon!
-A website for counting SOS chains on Pokemon
+A tool for counting SOS chains on Pokemon
 
 ## Features:
 * Adding and taking away from the chain
