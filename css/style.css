@@ -33,3 +33,22 @@ button {
 .reset-button {
     background-color: #ff0000;
 }
+
+/****************************************************
+                    NIGHT MODE
+****************************************************/
+.center-night {
+    height: 350px;
+    width: 350px;
+    background: black;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+.night {
+    background-color: black;
+}
