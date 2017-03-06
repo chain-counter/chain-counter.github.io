@@ -51,4 +51,5 @@ button {
 
 .night {
     background-color: black;
+    color: white; /* text color */
 }
