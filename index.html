@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Space Clicker</title>
+    <title>Chain counter</title>
 </head>
 
 <body>
@@ -10,8 +10,14 @@
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
     };
+        var clicks = 0;
+    function downClick() {
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
     </script>
-    <button type="button" onClick="onClick()">Click me</button>
+    <button type="button" onClick="onClick()">+1</button>
+    <button type="button" onClick="downClick()">-1</button>
     <p>Clicks: <a id="clicks">0</a></p>
 
 </body></html>
