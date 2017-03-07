@@ -12,11 +12,12 @@
 </head>
 <body class="night">
   <div class="center-night text-align">
-    <script type="text/javascript"></script>
-    <button class="plus-button" type="button" onClick="onClick()">+1</button>
-    <button type="button" onClick="downClick()">-1</button>
+    <button type="button" onclick='clickMinus()'>-1</button>
+    <button class="plus-button" type="button" onclick='clickPlus()'>+1</button>
       <br><br>
-    <p style="font-size:30px;">Chain no: <a id="clicks">0</a></p>
+    <p style="font-size:30px;">Chain no: <a id="counterValue">0</a></p>
+<div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
+      <br>
     <form action="https://chain-counter.github.io/night-mode/night.html">
       <button class="reset-button" type="submit">Reset</button>
     </form>
