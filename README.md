@@ -6,3 +6,6 @@ A tool for counting SOS chains on Pokemon
 * Resetting the chain
 * More tab with chaining info
 * Night mode
+
+## Third party credits
+- [Pokesprite](https://github.com/msikma/pokesprite)
