@@ -70,6 +70,11 @@ modal end -->
 PkSpr.process_dom();
 </script>
     <script src="/path/to/mousetrap.min.js"></script>
+    <script>
+    // single keys
+    Mousetrap.bind('w', function(clickPlus) { console.log('up'); });
+    Mousetrap.bind("s", function(clickMinus) { console.log('down'); });
+    </script>
 </body>
     <footer><p class="padding">By <a href="https://giacomolaw.github.io" target="_blank">Giacomo Lawrance</a>.</p></footer>
 </html>
