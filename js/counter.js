@@ -11,14 +11,6 @@ function clickPlus() {
 function clickMinus() {
   var currentValue
   incrementCounterValueBy(-1)
-  
-  currentValue = getCounterValue()
-
-  if (currentValue < winningNumber && currentValue !== min) {
-    displayMessage("Wrong way partner!")
-  } else {
-    updateMessage()
-  }
 }
 
 function incrementCounterValueBy(amount) {
