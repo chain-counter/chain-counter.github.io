@@ -38,6 +38,17 @@ button {
     padding-left: 10px;
 }
 
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+
+.inner
+{
+    display: inline-block;
+}
+
 /****************************************************
                     NIGHT MODE
 ****************************************************/
