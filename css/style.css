@@ -55,7 +55,7 @@ button {
 .center-night {
     height: 350px;
     width: 350px;
-    background: black;
+    background: #000d1a;
 
     position: fixed;
     top: 50%;
@@ -65,6 +65,6 @@ button {
 }
 
 .night {
-    background-color: black;
+    background-color: #000d1a;
     color: white; /* text color */
 }
