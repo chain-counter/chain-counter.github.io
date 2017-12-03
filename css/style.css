@@ -38,14 +38,12 @@ button {
     padding-left: 10px;
 }
 
-#outer
-{
-    width:100%;
+#outer {
+    width: 100%;
     text-align: center;
 }
 
-.inner
-{
+.inner {
     display: inline-block;
 }
 

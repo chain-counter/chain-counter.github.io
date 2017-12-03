@@ -1,66 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Chain Counter</title>
+    <meta charset="UTF-8">
     <meta name="description" content="Chain Counter - A Tool for Counting SOS Chains in Pokemon!">
-    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/pokesprite.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/counter.js"></script>
-    <script src="js/pokesprite.min.css"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/pokesprite.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-57282086-4', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-57282086-4', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
-  <div class="center text-align">
+<div class="center text-align">
     <button type="button" onclick='clickMinus()'>-1</button>
     <button class="plus-button" type="button" onclick='clickPlus()'>+1</button>
-      <br><br>
+    <br><br>
     <p style="font-size:30px;">Chain no: <a id="counterValue">0</a></p>
-<div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
-      <br>
-    <form action="https://chain-counter.github.io/">
-      <button class="reset-button" type="submit">Reset</button>
+    <div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
+    <br>
+    <form action="index.html">
+        <button class="reset-button" type="submit">Reset</button>
     </form>
-      <br>
-      <div id="outer">
-          <div class="inner">
-      <form action="https://chain-counter.github.io/more.html" target="_blank">
-      <button type="submit">Chaining info</button>
-    </form>
-          </div>
-          <div class="inner">
-      <form action="https://chain-counter.github.io/night-mode/night.html">
-      <button type="submit">Night mode</button>
-    </form>
-          </div>
-          <div class="inner">
-      <form action="https://chain-counter.github.io/donate.html" target="_blank">
-      <button type="submit">Donate</button>
-    </form>
-          </div>
-      </div>
-  </div>
-    <script type="text/javascript">
-PkSpr.process_dom();
+    <br>
+    <div id="outer">
+        <div class="inner">
+            <form action="more.html" target="_blank">
+                <button type="submit">Chaining info</button>
+            </form>
+        </div>
+        <div class="inner">
+            <form action="night-mode/night.html">
+                <button type="submit">Night mode</button>
+            </form>
+        </div>
+        <div class="inner">
+            <form action="donate.html" target="_blank">
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="padding">By <a href="https://giacomolaw.github.io" target="_blank">Giacomo Lawrance</a>. - View the <a
+            href="https://github.com/chain-counter/chain-counter.github.io" target="_blank">source code</a>.</p>
+</footer>
+<script type="text/javascript">
+    PkSpr.process_dom();
 </script>
-    <script src="/path/to/mousetrap.min.js"></script>
-    <script>
-    // single keys
-    Mousetrap.bind('w', function(clickPlus) { console.log('up'); });
-    Mousetrap.bind("s", function(clickMinus) { console.log('down'); });
-    </script>
+<!-- Currently useless in code without an actual way to use it lol -->
+<script src="js/mousetrap.min.js"></script>
 </body>
-    <footer><p class="padding">By <a href="https://giacomolaw.github.io" target="_blank">Giacomo Lawrance</a>. - View the <a href="https://github.com/chain-counter/chain-counter.github.io" target="_blank">source code</a>.</p></footer>
 </html>

@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Chain Counter</title>
-          <meta name="description" content="Chain Counter - A Tool for Counting SOS Chains in Pokemon!">
-      <link rel="shortcut icon" href="../favicon.ico" />
+    <title>Chain Counter</title>
+    <meta name="description" content="Chain Counter - A Tool for Counting SOS Chains in Pokemon!">
+    <link rel="shortcut icon" href="../favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-          <link rel="stylesheet" type="text/css" href="../css/pokesprite.min.css">
-                <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/pokesprite.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../js/pokesprite.min.js"></script>
-          <script src="../js/counter.js"></script>
+    <script src="../js/counter.js"></script>
     <script src="../js/bootstrap.js"></script>
-          <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-57282086-4', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-57282086-4', 'auto');
+        ga('send', 'pageview');
 
-</script>
+    </script>
 </head>
 <body class="night padding">
-          <br>
-  <h3>IVs</h3>
-    <ul>
-      <li>0 - 4: No guaranteed IVs</li>
-      <li>5 - 9: 1 perfect IV</li>
-      <li>10 - 19: 2 perfect IVs</li>
-      <li>20 - 29: 3 perfect IVs</li>
-      <li>30 - 255: 4 perfect IVs</li>
-    </ul>  
-  <h3>Hidden abilities</h3>
-  <ul>
+<br>
+<h3>IVs</h3>
+<ul>
+    <li>0 - 4: No guaranteed IVs</li>
+    <li>5 - 9: 1 perfect IV</li>
+    <li>10 - 19: 2 perfect IVs</li>
+    <li>20 - 29: 3 perfect IVs</li>
+    <li>30 - 255: 4 perfect IVs</li>
+</ul>
+<h3>Hidden abilities</h3>
+<ul>
     <li>0 - 9: 0% chance</li>
     <li>10 - 19: 5% chance</li>
     <li>20 - 29: 10% chance</li>
     <li>30 - 255: 15% chance</li>
-   </ul>
+</ul>
 <h3>Shiny - <span class="pkspr pkmn-charizard color-shiny"></span></h3>
-  <p>70 - 255 gives you a 1/1024 chance of encountering a shiny. If you have the shiny charm, it is 1/683.</p>
-          <br>
-          <p>Note that this is given to you live under the counter!</p>
-          <script type="text/javascript">
-PkSpr.process_dom();
+<p>70 - 255 gives you a 1/1024 chance of encountering a shiny. If you have the shiny charm, it is 1/683.</p>
+<br>
+<p>Note that this is given to you live under the counter!</p>
+<script type="text/javascript">
+    PkSpr.process_dom();
 </script>
 </body>
 </html>
