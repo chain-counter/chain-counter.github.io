@@ -1,70 +1,55 @@
 .center {
-    height: 350px;
-    width: 350px;
-    background: white;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -220px;
-    margin-left: -200px;
+	height: 350px;
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .text-align {
-    text-align: center;
+	text-align: center;
 }
 
 button {
-    background-color: #cccccc;
-    border: none;
-    color: black;
-    padding: 8px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 12px;
+	background-color: #cccccc;
+	border: none;
+	color: black;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 12px;
 }
 
 .plus-button {
-    background-color: #3fa323;
+	background-color: #3fa323;
 }
 
 .reset-button {
-    background-color: #ff0000;
+	background-color: #ff0000;
 }
 
 .padding {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 #outer
 {
-    width:100%;
-    text-align: center;
+	width:100%;
+	text-align: center;
 }
 
 .inner
 {
-    display: inline-block;
+	display: inline-block;
 }
 
 /****************************************************
                     NIGHT MODE
 ****************************************************/
-.center-night {
-    height: 350px;
-    width: 350px;
-    background: #000d1a;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -220px;
-    margin-left: -200px;
-}
-
 .night {
-    background-color: #000d1a;
-    color: white; /* text color */
+	background-color: #000d1a;
+	color: white; /* text color */
 }

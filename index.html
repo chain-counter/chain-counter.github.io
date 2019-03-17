@@ -30,44 +30,43 @@
     </script>
 </head>
 <body>
-<div style="text-align:center">
-    <button type="button" onclick='clickMinus()'>-1</button>
-    <button class="plus-button" type="button" onclick='clickPlus()'>+1</button>
-    <br><br>
-    <p style="font-size:30px;">Chain no: <a id="counterValue">0</a></p>
-    <div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
-    <br>
-    <form action="index.html">
-        <button class="reset-button" type="submit">Reset</button>
-    </form>
-    <br>
-    <div id="outer">
-        <div class="inner">
-            <form action="more.html" target="_blank">
-                <button type="submit">Chaining info</button>
+    <div style="text-align:center">
+        <div class="center">
+            <button type="button" onclick='clickMinus()'>-1</button>
+            <button class="plus-button" type="button" onclick='clickPlus()'>+1</button>
+            <br><br>
+            <p style="font-size:30px;">Chain no: <a id="counterValue">0</a></p>
+            <div id="messageBox">No guaranteed IVs, 0% HA Chance, low shiny chance</div>
+            <br>
+            <form action="index.html">
+                <button class="reset-button" type="submit">Reset</button>
             </form>
-        </div>
-        <div class="inner">
-            <form action="night-mode/night.html">
-                <button type="submit">Night mode</button>
-            </form>
-        </div>
-        <div class="inner">
-            <form action="donate.html" target="_blank">
-                <button type="submit">Donate</button>
-            </form>
+            <br>
+            <div id="outer">
+                <div class="inner">
+                    <form action="more.html" target="_blank">
+                        <button type="submit">Chaining info</button>
+                    </form>
+                </div>
+                <div class="inner">
+                    <form action="night-mode/night.html">
+                        <button type="submit">Night mode</button>
+                    </form>
+                </div>
+                <div class="inner">
+                    <form action="donate.html" target="_blank">
+                        <button type="submit">Donate</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<br />
-<footer>
-    <p class="padding">By <a href="http://giacomolaw.me/" target="_blank">Giacomo Lawrance</a>. - View the <a
-            href="https://github.com/chain-counter/chain-counter.github.io" target="_blank">source code</a>.</p>
-</footer>
-<script type="text/javascript">
-    PkSpr.process_dom();
-</script>
-<!-- Currently useless in code without an actual way to use it lol -->
-<script src="js/mousetrap.min.js"></script>
+    <br />
+    <footer>
+        <p class="padding">By <a href="http://giacomolaw.me/" target="_blank">Giacomo Lawrance</a>. - View the <a href="https://github.com/chain-counter/chain-counter.github.io" target="_blank">source code</a>.</p>
+    </footer>
+    <script type="text/javascript">
+        PkSpr.process_dom();
+    </script>
 </body>
 </html>
