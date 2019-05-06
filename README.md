@@ -10,3 +10,7 @@ A tool for counting SOS chains on Pokemon
 
 ## Third party credits
 - [Pokesprite](https://github.com/msikma/pokesprite)
+
+We use BrowserStack to test across multiple browsers:
+
+[<img src="https://raw.githubusercontent.com/GiacomoLaw/TNS-images/master/browserstack-logo-600x315.png">](https://www.browserstack.com/)
