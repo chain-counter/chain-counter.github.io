@@ -66,3 +66,22 @@ function getMessageFor(counterValue) {
             return "LIMIT reached!";
     }
 }
+
+function updateNightMode(isNightMode) {
+    if (isNightMode === true || isNightMode === 'true') {
+        document.getElementsByTagName('body')[0].classList.add('night');
+    } else {
+        document.getElementsByTagName('body')[0].classList.remove('night');
+    }
+}
+
+window.onload = function() {
+    let nightMode = window.localStorage['nightMode'] === 'true' ? true : false;
+    updateNightMode(nightMode);
+
+    document.getElementById('night-mode').onclick = () => {
+        nightMode = !nightMode;
+        window.localStorage['nightMode'] = nightMode;
+        updateNightMode(nightMode);
+    }
+}
