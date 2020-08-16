@@ -66,3 +66,12 @@ function getMessageFor(counterValue) {
             return "LIMIT reached!";
     }
 }
+
+window.addEventListener('load', function() {
+    let infoDrop = false;
+    document.getElementById('info').onclick = function() {
+        infoDrop = !infoDrop;
+        document.getElementById('more-info').style.display = infoDrop ?
+            'block' : 'none';
+    };
+})
