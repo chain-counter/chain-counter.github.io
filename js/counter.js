@@ -67,17 +67,21 @@ function getMessageFor(counterValue) {
     }
 }
 
-window.addEventListener('keyup', function(event) {
-    const key = event.keyCode;
-    if (key === 87 || key === 38) {
-        // 'w' or 'up arrow'
-        incrementCounterValueBy(1);
-    } else if (key === 83 || key === 40) {
-        // 's' or 'down arrow'
-        incrementCounterValueBy(-1);
-    } else if (key === 82) {
-        // 'r'
-        incrementCounterValueBy(-getCounterValue())
+function updateNightMode(isNightMode) {
+    if (isNightMode === true || isNightMode === 'true') {
+        document.getElementsByTagName('body')[0].classList.add('night');
+    } else {
+        document.getElementsByTagName('body')[0].classList.remove('night');
     }
-    updateMessage();
-})
+}
+
+window.onload = function() {
+    let nightMode = window.localStorage['nightMode'] === 'true' ? true : false;
+    updateNightMode(nightMode);
+
+    document.getElementById('night-mode').onclick = () => {
+        nightMode = !nightMode;
+        window.localStorage['nightMode'] = nightMode;
+        updateNightMode(nightMode);
+    }
+}
