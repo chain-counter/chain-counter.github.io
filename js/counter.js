@@ -76,7 +76,7 @@ function updateNightMode(isNightMode) {
 }
 
 window.onload = function() {
-    let nightMode = window.localStorage['nightMode'] === 'true' ? true : false;
+    let nightMode = window.localStorage['nightMode'] === 'true';
     updateNightMode(nightMode);
 
     document.getElementById('night-mode').onclick = () => {
@@ -85,3 +85,27 @@ window.onload = function() {
         updateNightMode(nightMode);
     }
 }
+
+window.addEventListener('load', function() {
+    let infoDrop = false;
+    document.getElementById('info').onclick = function() {
+        infoDrop = !infoDrop;
+        document.getElementById('more-info').style.display = infoDrop ?
+            'block' : 'none';
+    };
+})
+
+window.addEventListener('keyup', function(event) {
+    const key = event.keyCode;
+    if (key === 87 || key === 38) {
+        // 'w' or 'up arrow'
+        incrementCounterValueBy(1);
+    } else if (key === 83 || key === 40) {
+        // 's' or 'down arrow'
+        incrementCounterValueBy(-1);
+    } else if (key === 82) {
+        // 'r'
+        incrementCounterValueBy(-getCounterValue())
+    }
+    updateMessage();
+})
