@@ -86,14 +86,14 @@ window.onload = function() {
     }
 }
 
-window.addEventListener('load', function() {
-    let infoDrop = false;
-    document.getElementById('info').onclick = function() {
-        infoDrop = !infoDrop;
-        document.getElementById('more-info').style.display = infoDrop ?
-            'block' : 'none';
-    };
-})
+// hide extended portfolio until clicked
+function toggler(divId) {
+    $("#" + divId).slideToggle(300);
+}
+
+function togglerclose(divId) {
+    $("#" + divId).slideToggle(100);
+}
 
 window.addEventListener('keyup', function(event) {
     const key = event.keyCode;

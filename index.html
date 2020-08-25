@@ -6,11 +6,9 @@
     <meta name="description" content="Chain Counter - A Tool for Counting SOS Chains in Pokemon!">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/pokesprite.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/counter.js"></script>
-    <script src="js/pokesprite.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
@@ -44,7 +42,10 @@
             <br>
             <div id="outer">
                 <div class="inner">
-                    <button id="info">Chaining info</button>
+                    <button id="portfoliomaster"
+                            onclick="toggler('chaininginfo');">
+                        Chaining info
+                    </button>
                 </div>
                 <div class="inner">
                     <button id="night-mode">Night mode</button>
@@ -54,17 +55,36 @@
                         <button type="submit">Donate</button>
                     </form>
                 </div>
+                <div id="chaininginfo">
+                    <br>
+                    <p>You can use <b>W</b> or the <b>up</b> key, and <b>S</b> or the <b>down</b> key, to increment the counter. You can also use <b>R</b> to reset the counter.</p>
+                    <h3>IVs</h3>
+                    <ul style="text-align: initial;">
+                        <li>0 - 4: No guaranteed IVs</li>
+                        <li>5 - 9: 1 perfect IV</li>
+                        <li>10 - 19: 2 perfect IVs</li>
+                        <li>20 - 29: 3 perfect IVs</li>
+                        <li>30 - 255: 4 perfect IVs</li>
+                    </ul>
+                    <h3>Hidden abilities</h3>
+                    <ul style="text-align: initial;">
+                        <li>0 - 9: 0% chance</li>
+                        <li>10 - 19: 5% chance</li>
+                        <li>20 - 29: 10% chance</li>
+                        <li>30 - 255: 15% chance</li>
+                    </ul>
+                    <h3>Shiny</h3>
+                    <p>70 - 255 gives you a 1/1024 chance of encountering a shiny. If you have the shiny charm, it is 1/683.</p>
+                    <br>
+                    <p>Note that this is given to you live under the counter!</p>
+                </div>
             </div>
             <br>
-            <iframe id="more-info" src="more.html" style="border: none;"></iframe>
         </div>
     </div>
     <br />
     <footer>
         <p class="padding">By <a href="http://giacomolaw.me/" target="_blank">Giacomo Lawrance</a>. - View the <a href="https://github.com/chain-counter/chain-counter.github.io" target="_blank">source code</a>.</p>
     </footer>
-    <script type="text/javascript">
-        PkSpr.process_dom();
-    </script>
 </body>
 </html>
